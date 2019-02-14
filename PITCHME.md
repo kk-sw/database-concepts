@@ -13,11 +13,11 @@ Note:
 - All data is stored in memory
 - It's a start
 
-✔ fast
+✔ Fast
 
-✔ store anything in any format
+✔ Store anything in any format
 
-✖ no persistent and durable storage
+✖ No persistent and durable storage
 
   
 ---
@@ -32,16 +32,17 @@ Note:
             └─ field separator
   ```
 
-✔ persistent
+✔ Persistent
 
-✔ store anything (records can be different)
+✔ Store anything (records can be different)
 
-✖ low-level access, programmer needed
+✖ Low-level access, programmer needed
 
-✖ complex queries are hard and slow
+✖ Complex queries are hard and slow
 
 Note:
  - Still used for small data sets in some domains
+ - Explain indexing
  
 ---
 
@@ -55,13 +56,13 @@ Note:
    Mngr1  Mngr2    
   ``` 
 
-✔ defined structure?
+✔ Defined structure?
 
-✔ faster than flat file??
+✔ Faster than flat file??
 
-✖ navigation through the hierarchy only
+✖ Navigation through the hierarchy only
 
-✖ inability to support ad hoc queries
+✖ Inability to support ad hoc queries
 
 Note:
  - It's logical model
@@ -77,16 +78,16 @@ Note:
   Richard ──  Scott    Susie ── Nancy
   ``` 
 
-✔ relaxed navigation 
+✔ Relaxed navigation 
 
-✔ very fast 
+✔ Very fast 
 
-✖ still pre-determined navigation (rigid schema)
+✖ Still pre-determined navigation (rigid schema)
 
-✖ inability to support ad hoc queries
+✖ Inability to support ad hoc queries
 
 Note:
-- still used
+- Still used
 - http://wiki.c2.com/?NetworkDatabase
 - https://stackoverflow.com/questions/3422221/what-exactly-is-the-problem-with-hierarchal-and-network-models-of-databases
 
@@ -101,6 +102,8 @@ Note:
 - Based on formal rules (math)
     - Optimal database design (NF)
     - Data access optimization
+- Very popular
+- MySQL, Oracle, MS SQL, Sybase, etc.
 
 @ulend
 
@@ -108,7 +111,7 @@ Note:
 
 ### RDBMS Concepts
 
-- Database = tables + table cross-reference + indecies 
+- Database = tables + table cross-reference + indexes
 
 ![SQL Conc](img/db1.png)
 
@@ -120,6 +123,14 @@ Note:
 - Structured Query Language (SQL)
 - ANSI Standard
 - Declarative language
+
+@ulend
+
+---
+
+### Structured Query Language Examples
+
+@ul
 - Create table
     - CREATE TABLE families (f_name char, s_name char, child_count int);
 - Query for data
@@ -128,9 +139,6 @@ Note:
     - UPDATE families SET f_name="Jonas" WHERE s_name = "Jhn"
 - Insert new data
     - INSERT INTO families VALUES ("Philip", "Zimmer", 3);
-
-- Column oriented
-- MySQL, Oracle, MS SQL, Sybase, etc.
 
 @ulend
 
@@ -147,7 +155,7 @@ Note:
     - Isolated:     Transactions do not contend with one another. 
     - Durable:      The results of applying a transaction are permanent, even in the presence of failures.
 - 4 levels of ACID
-    - speed vs trust
+    - Speed vs trust
 
 @ulend
 
@@ -160,9 +168,8 @@ Note:
 - Cost
 @ulend
 
-
-
-
+Note:
+ - Column stores
 
 
 
@@ -171,8 +178,6 @@ Note:
 
 
 ---
-
-
 
 
 
@@ -232,7 +237,7 @@ Note:
 
 - xxx
     ```text
-    
+    Example
     ```
 - Products
 
@@ -250,6 +255,7 @@ Note:
 
 - xxx
     ```text
+    Example
     ```
 - Products
 
@@ -267,6 +273,7 @@ Note:
 
 - xxx
     ```text
+    Example
     ```
 - Products
 
@@ -284,6 +291,7 @@ Note:
 
 - xxx
     ```text
+    Example
     ```
 - Products
 
