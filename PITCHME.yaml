@@ -1,0 +1,12 @@
+
+### theme : beige
+
+layout : top-left
+
+highlight : mono-blue # foundation purebasic mono-blue
+
+### code-line-numbers : true
+
+footnote : "Database Concepts - A Historical Perspective - 2019"
+
+published : false
