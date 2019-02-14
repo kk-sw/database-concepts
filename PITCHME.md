@@ -1,6 +1,8 @@
 @snap[midpoint text-center]
+
 ## Database Concepts 
 ####  A Historical Perspective
+
 @snapend
 
 Note:
@@ -18,7 +20,6 @@ Note:
 ✔ Store anything in any format
 
 ✖ No persistent and durable storage
-
   
 ---
 
@@ -98,14 +99,17 @@ Note:
 @ul
 - E. F. Codd in 1970 (IBM)
 - Relational model of data  
-- User friendly (SQL)
 - Based on formal rules (math)
     - Optimal database design (NF)
     - Data access optimization
+- User friendly 
 - Very popular
 - MySQL, Oracle, MS SQL, Sybase, etc.
 
 @ulend
+
+Note:
+ - User friendly as abstractions and SQL
 
 ---
 
@@ -113,34 +117,44 @@ Note:
 
 - Database = tables + table cross-reference + indexes
 
-![SQL Conc](img/db1.png)
+![SQL](img/db1.png)
 
 ---
 
 ### Structured Query Language (SQL)
 
 @ul
-- Structured Query Language (SQL)
+- SQL = Structured Query Language 
 - ANSI Standard
-- Declarative language
+- Declarative language 
+    - Focus on what to do, not how to do
+- User friendly
+- Pure SQL applications (no programmer)
 
 @ulend
 
 ---
 
-### Structured Query Language Examples
+### Structured Query Language Examples (Table)
 
-@ul
 - Create table
     - CREATE TABLE families (f_name char, s_name char, child_count int);
+- Delete table
+    - DROP TABLE families;
+    
+Note:
+ - Drop table = NoSql
+ 
+---
+
+### Structured Query Language Examples (Data)
+
+- Insert new data
+    - INSERT INTO families VALUES ("Philip", "Zimmer", 3);
 - Query for data
     - SELECT f_name, s_name FROM families WHERE child_count > 2;
 - Modify existing data
     - UPDATE families SET f_name="Jonas" WHERE s_name = "Jhn"
-- Insert new data
-    - INSERT INTO families VALUES ("Philip", "Zimmer", 3);
-
-@ulend
 
 ---
 
@@ -335,7 +349,9 @@ Note:
 ---
 
 @snap[midpoint text-center]
+
 #### Use whatever is the best for the given problem 
+
 @snapend
 
 Note:
@@ -345,6 +361,8 @@ Note:
 ---
 
 @snap[midpoint text-center]
+
 ## Thank You
 #### Questions? 
+
 @snapend
