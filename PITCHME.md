@@ -1,8 +1,8 @@
 @snap[midpoint text-center]
 
-## Database Concepts 
+## Database Concepts
 ####  A Historical Perspective
-
+###### (c) (P) Research In Motion
 @snapend
 
 Note:
@@ -20,7 +20,7 @@ Note:
 ✔ Store anything in any format
 
 ✖ No persistent and durable storage
-  
+
 ---
 
 ### Historical Databases (Flat File)
@@ -29,7 +29,7 @@ Note:
   Ted Scott ▫ $100 ▫ Apple ☷ Ai Joe ▫ $900 ▫ Peach ☷
   ◺      ◿  │              │
     field   │              │
-    value   │              └─ record separator   
+    value   │              └─ record separator
             └─ field separator
   ```
 
@@ -44,7 +44,7 @@ Note:
 Note:
  - Still used for small data sets in some domains
  - Explain indexing
- 
+
 ---
 
 ### Historical Databases (Hierarchical)
@@ -52,10 +52,10 @@ Note:
   ```text
          CTO
         ╱   ╲
-      Head1 Head2 
+      Head1 Head2
      ╱    ╲
-   Mngr1  Mngr2    
-  ``` 
+   Mngr1  Mngr2
+  ```
 
 ✔ Defined structure?
 
@@ -68,20 +68,20 @@ Note:
 Note:
  - It's logical model
  - Actual disk storage is different
- 
+
 ---
 
 ### Historical Databases (Navigational)
 
   ```text
-  John    ──  Alice ── Maggie   Rob 
+  John    ──  Alice ── Maggie   Rob
    │           │        │        │
   Richard ──  Scott    Susie ── Nancy
-  ``` 
+  ```
 
-✔ Relaxed navigation 
+✔ Relaxed navigation
 
-✔ Very fast 
+✔ Very fast
 
 ✖ Still pre-determined navigation (rigid schema)
 
@@ -94,15 +94,15 @@ Note:
 
 ---
 
-### Relational (RDBMS) Databases 
+### Relational (RDBMS) Databases
 
 @ul
 - E. F. Codd in 1970 (IBM)
-- Relational model of data  
+- Relational model of data
 - Based on formal rules (math)
     - Optimal database design (NF)
     - Data access optimization
-- User friendly 
+- User friendly
 - Very popular
 - MySQL, Oracle, MS SQL, Sybase, etc.
 
@@ -113,20 +113,28 @@ Note:
 
 ---
 
-### RDBMS Concepts
+### RDBMS Concepts (Table)
 
-- Database = tables + table cross-reference + indexes
+- Database = tables + table cross-reference + keys
 
 ![SQL](img/db1.png)
+
+---
+
+### RDBMS Concepts (Keys)
+
+- Primary Key (PK) is an unique identifier for an entity.
+
+![SQL](img/db2.png)
 
 ---
 
 ### Structured Query Language (SQL)
 
 @ul
-- SQL = Structured Query Language 
+- SQL = Structured Query Language
 - ANSI Standard
-- Declarative language 
+- Declarative language
     - Focus on what to do, not how to do
 - User friendly
 - Pure SQL applications (no programmer)
@@ -141,10 +149,10 @@ Note:
     - CREATE TABLE families (f_name char, s_name char, child_count int);
 - Delete table
     - DROP TABLE families;
-    
+
 Note:
  - Drop table = NoSql
- 
+
 ---
 
 ### Structured Query Language Examples (Data)
@@ -161,13 +169,13 @@ Note:
 ### ACID (Transaction Control)
 
 @ul
-- What to see and when
-- Isolation of the operations at the same time !!!!!!!!!!
+- Who sees what changes and when
+- Transaction = operations in a bundle
 - ACID (transaction control)
-    - Atomic:       All operations in a transaction succeed or every operation is rolled back.
-    - Consistent:   On the completion of a transaction, the database is structurally sound.  
-    - Isolated:     Transactions do not contend with one another. 
-    - Durable:      The results of applying a transaction are permanent, even in the presence of failures.
+    - Atomic:       All operations succeed or roll-back (state before)
+    - Consistent:   On completion the database is in correct state
+    - Isolated:     Transactions do not disturb/effect another
+    - Durable:      Results are permanent, even if error'd
 - 4 levels of ACID
     - Speed vs trust
 
@@ -178,8 +186,13 @@ Note:
 ### RDBMS Drawbacks
 
 @ul
-- 
-- Cost
+- Scaling is costly (ACID)
+    - performance
+    - cash
+- Non-structured data is hard to store
+
+TODO graph
+
 @ulend
 
 Note:
@@ -188,49 +201,48 @@ Note:
 
 
 
-
-
-
 ---
 
 
 
-### NoSQL Databases  
+
+
+### NoSQL Databases
 
 @ul
-- No predefined schema/structure 
+- No predefined schema/structure
     - Store anything
 - Non-trivial queries are hard
 - Model database based on the proposed usage
-    - Need to know what to use for     
+    - Need to know what to use for
 - Performance
 
 @ulend
 
 ---
 
-### CAP Theorem  
+### CAP Theorem
 
 @ul
 - CAP theorem (Reliability)
-  - Consistency: Every read receives the most recent write or an error
-  - Availability: Every request receives a (non-error) response with some (even old) data
-  - Partition tolerance: operate when network is not reliable
+  - Consistency:         A read receives the most recent data or an error
+  - Availability:        A request receives a (non-error) response with (old) data
+  - Partition tolerance: System operates when network is not reliable
 - Choose two
-- Most system support multiple CAP modes
+- Most systems support configurable CAP modes
 
 @ulend
-  
+
 ---
 
-### NoSQL Databases (Historical) 
+### NoSQL Databases (Historical)
 
 - XML Database
 - Object Store
-  
+
 ---
-  
-### NoSQL Databases (Key-Value)  
+
+### NoSQL Databases (Key-Value)
 
     ```text
         123 : { f_name = "Arthur", s_name = "Legend" }
@@ -243,11 +255,11 @@ Note:
 
 ✖ Access by keys
 
-✖ 
-    
+✖
+
 ---
-  
-### NoSQL Databases (Document)  
+
+### NoSQL Databases (Document)
 
 - xxx
     ```text
@@ -255,17 +267,17 @@ Note:
     ```
 - Products
 
-✔ 
+✔
 
-✔ 
+✔
 
-✖ 
+✖
 
-✖ 
+✖
 
 ---
-  
-### NoSQL Databases (Wide Column)  
+
+### NoSQL Databases (Wide Column)
 
 - xxx
     ```text
@@ -273,17 +285,17 @@ Note:
     ```
 - Products
 
-✔ 
+✔
 
-✔ 
+✔
 
-✖ 
+✖
 
-✖ 
+✖
 
 ---
-  
-### NoSQL Databases (Graph)  
+
+### NoSQL Databases (Graph)
 
 - xxx
     ```text
@@ -291,17 +303,17 @@ Note:
     ```
 - Products
 
-✔ 
+✔
 
-✔ 
+✔
 
-✖ 
+✖
 
-✖ 
+✖
 
 ---
-  
-### NoSQL Databases (Time)  
+
+### NoSQL Databases (Time)
 
 - xxx
     ```text
@@ -309,13 +321,13 @@ Note:
     ```
 - Products
 
-✔ 
+✔
 
-✔ 
+✔
 
-✖ 
+✖
 
-✖ 
+✖
 
 
 ---
@@ -323,19 +335,19 @@ Note:
 ### NoSql Drawbacks
 
 @ul
-- 
-- 
+-
+-
 @ulend
-  
----
-  
-### Future Directions  
 
-@ul  
+---
+
+### Future Directions
+
+@ul
 - NewSQL     (SQL ↔ NoSQL convergence)
 - MAU        (commodity hardware)
 - NIC/RDMA   (cross memory access)
-- RAM store  (very fast) 
+- RAM store  (very fast)
 - FPGA       (custom hardware)
 @ulend
 
@@ -345,12 +357,12 @@ Note:
 
 
 
- 
+
 ---
 
 @snap[midpoint text-center]
 
-#### Use whatever is the best for the given problem 
+#### Use whatever is the best for the given problem
 
 @snapend
 
@@ -363,6 +375,6 @@ Note:
 @snap[midpoint text-center]
 
 ## Thank You
-#### Questions? 
+#### Questions?
 
 @snapend
