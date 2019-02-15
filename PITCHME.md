@@ -124,6 +124,7 @@ Note:
 ### RDBMS Concepts (Keys)
 
 - Primary Key (PK) is an unique identifier for an entity
+- Keys are needed to make relations
 
 ![SQL](img/db2.png)
 
@@ -197,7 +198,7 @@ Note:
 @ul
 - Scaling is hard (ACID)
     - Expensive
-    - 'Free' solutions are not mature for 9.9%
+    - 'Free' solutions are not mature for 9...9%
     - Synchronization penalty
 - Non-structured data is hard to store
     - NoSql for rescue
@@ -361,12 +362,11 @@ Note:
 
 ### NoSql Drawbacks
 
-- aaa
+- Operational Expertise
 
 @ul
-- Operational Expertise
-- fhjsdhf kjshdfkjsdhfk
-
+- aa
+- bb
 @ulend
 
 ---
