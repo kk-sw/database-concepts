@@ -2,7 +2,7 @@
 
 ## Database Concepts
 ####  A Historical Perspective
-###### (c) (P) Research In Motion
+
 @snapend
 
 Note:
@@ -57,13 +57,13 @@ Note:
    Mngr1  Mngr2
   ```
 
-✔ Defined structure?
+✔ Defined structure
 
-✔ Faster than flat file??
+✔ Faster than flat file
 
-✖ Navigation through the hierarchy only
+✖ Navigation through the hierarchy only (up-down)
 
-✖ Inability to support ad hoc queries
+✖ "Programmer perspective" needed
 
 Note:
  - It's logical model
@@ -83,12 +83,12 @@ Note:
 
 ✔ Very fast
 
-✖ Still pre-determined navigation (rigid schema)
+✖ Still pre-determined navigation (no ad hoc queries)
 
-✖ Inability to support ad hoc queries
+✖ "Programmer perspective" needed
 
 Note:
-- Still used
+- Still used - IBM Information Management System v15 / 2017
 - http://wiki.c2.com/?NetworkDatabase
 - https://stackoverflow.com/questions/3422221/what-exactly-is-the-problem-with-hierarchal-and-network-models-of-databases
 
@@ -99,12 +99,12 @@ Note:
 @ul
 - E. F. Codd in 1970 (IBM)
 - Relational model of data
-- Based on formal rules (math)
+- Based on formal (math) rules 
     - Optimal database design (NF)
     - Data access optimization
 - User friendly
 - Very popular
-- MySQL, Oracle, MS SQL, Sybase, etc.
+- MySQL, Oracle, MS SQL, Sybase, MS Access, etc.
 
 @ulend
 
@@ -123,7 +123,7 @@ Note:
 
 ### RDBMS Concepts (Keys)
 
-- Primary Key (PK) is an unique identifier for an entity.
+- Primary Key (PK) is an unique identifier for an entity
 
 ![SQL](img/db2.png)
 
@@ -137,7 +137,10 @@ Note:
 - Declarative language
     - Focus on what to do, not how to do
 - User friendly
-- Pure SQL applications (no programmer)
+    - Abstractions for non-programmers
+    - English like language
+- Pure SQL applications (MS Access)
+    - Not fancy, but no programmer needed
 
 @ulend
 
@@ -151,7 +154,7 @@ Note:
     - DROP TABLE families;
 
 Note:
- - Drop table = NoSql
+ - Drop table = NoSql :)
 
 ---
 
@@ -176,7 +179,7 @@ Note:
     - Consistent:   On completion the database is in correct state
     - Isolated:     Transactions do not disturb/effect another
     - Durable:      Results are permanent, even if error'd
-- 4 levels of ACID
+- 4 ACID levels
     - Speed vs trust
 
 @ulend
@@ -188,19 +191,35 @@ Note:
 ![Arch](img/client-server-db.png)
 
 @ul
-- Scaling is costly (ACID)
-    - performance
-    - cash
+- Scaling is hard (ACID)
+    - Expensive
+    - 'free' solutions are not mature for 9.9%
+    - Synchronization cost
 - Non-structured data is hard to store
-
-TODO graph
+    - NoSql for rescue
+    
+- For majority of uses SQL is just enough
 
 @ulend
 
 Note:
+ - ACID -> math -> need to synchronize to guarantee correctness
  - Column stores
 
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 ---
