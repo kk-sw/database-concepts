@@ -99,7 +99,7 @@ Note:
 @ul
 - E. F. Codd in 1970 (IBM)
 - Relational model of data
-- Based on formal (math) rules 
+- Based on formal (math) rules
     - Optimal database design (NF)
     - Data access optimization
 - User friendly
@@ -175,14 +175,18 @@ Note:
 - Who sees what changes and when
 - Transaction = operations in a bundle
 - ACID (transaction control)
-    - Atomic:       All operations succeed or roll-back (state before)
+    - Atomic:       Operations succeed or roll-back (state before)
     - Consistent:   On completion the database is in correct state
     - Isolated:     Transactions do not disturb/effect another
     - Durable:      Results are permanent, even if error'd
 - 4 ACID levels
-    - Speed vs trust
+    - Speed vs consistency
 
 @ulend
+
+Note:
+ - Transaction with one operation
+ - Automatic ACID modes
 
 ---
 
@@ -194,10 +198,9 @@ Note:
 - Scaling is hard (ACID)
     - Expensive
     - 'Free' solutions are not mature for 9.9%
-    - Synchronization cost
+    - Synchronization penalty
 - Non-structured data is hard to store
     - NoSql for rescue
-    
 - For majority of uses SQL is just enough
 
 @ulend
@@ -207,19 +210,19 @@ Note:
  - Column stores
 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ---
