@@ -185,6 +185,8 @@ Note:
 
 ### RDBMS Drawbacks
 
+![Arch](img/client-server-db.png)
+
 @ul
 - Scaling is costly (ACID)
     - performance
