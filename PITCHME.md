@@ -96,9 +96,8 @@ Note:
 
 ### Relational (RDBMS) Databases
 
-- E. F. Codd in 1970 (IBM)
-
 @ul
+- E. F. Codd in 1970 (IBM)
 - Relational model of data
 - Based on formal (math) rules 
     - Optimal database design (NF)
@@ -132,8 +131,8 @@ Note:
 
 ### Structured Query Language (SQL)
 
-- SQL = Structured Query Language
 @ul
+- SQL = Structured Query Language
 - ANSI Standard
 - Declarative language
     - Focus on what to do, not how to do
@@ -141,7 +140,7 @@ Note:
     - Abstractions for non-programmers
     - English like language
 - Pure SQL applications (MS Access)
-    - Not fancy, but no programmer needed
+    - Not fancy, but no programming needed
 
 @ulend
 
@@ -172,8 +171,8 @@ Note:
 
 ### ACID (Transaction Control)
 
-- Who sees what changes and when
 @ul
+- Who sees what changes and when
 - Transaction = operations in a bundle
 - ACID (transaction control)
     - Atomic:       All operations succeed or roll-back (state before)
@@ -194,7 +193,7 @@ Note:
 @ul
 - Scaling is hard (ACID)
     - Expensive
-    - 'free' solutions are not mature for 9.9%
+    - 'Free' solutions are not mature for 9.9%
     - Synchronization cost
 - Non-structured data is hard to store
     - NoSql for rescue
@@ -231,9 +230,9 @@ Note:
 
 ### NoSQL Databases
 
+@ul
 - No predefined schema/structure
     - Store anything
-@ul
 - Non-trivial queries are hard
     - Model database based on the proposed usage
     - Need to know what to use for
@@ -247,9 +246,8 @@ Note:
 
 ### CAP Theorem
 
-- Eric Brewer (~1997)
-
 @ul
+- Eric Brewer (~1997)
 - CAP theorem (Reliability)
   - Consistency:         A read receives the most recent data or an error
   - Availability:        A request receives a (non-error) response with (old) data
@@ -364,7 +362,8 @@ Note:
 
 @ul
 - Operational Expertise
-- ccc
+- fhjsdhf kjshdfkjsdhfk
+
 @ulend
 
 ---
