@@ -27,7 +27,7 @@ Note:
 
   ```text
   Ted Scott ▫ $100 ▫ Apple ☷ Ai Joe ▫ $900 ▫ Peach ☷
-  ◺      ◿  │              │
+  ◺      ◿ │              │
     field   │              │
     value   │              └─ record separator
             └─ field separator
@@ -96,8 +96,9 @@ Note:
 
 ### Relational (RDBMS) Databases
 
-@ul
 - E. F. Codd in 1970 (IBM)
+
+@ul
 - Relational model of data
 - Based on formal (math) rules 
     - Optimal database design (NF)
@@ -131,8 +132,8 @@ Note:
 
 ### Structured Query Language (SQL)
 
-@ul
 - SQL = Structured Query Language
+@ul
 - ANSI Standard
 - Declarative language
     - Focus on what to do, not how to do
@@ -171,8 +172,8 @@ Note:
 
 ### ACID (Transaction Control)
 
-@ul
 - Who sees what changes and when
+@ul
 - Transaction = operations in a bundle
 - ACID (transaction control)
     - Atomic:       All operations succeed or roll-back (state before)
@@ -230,19 +231,23 @@ Note:
 
 ### NoSQL Databases
 
-@ul
 - No predefined schema/structure
     - Store anything
+@ul
 - Non-trivial queries are hard
-- Model database based on the proposed usage
+    - Model database based on the proposed usage
     - Need to know what to use for
 - Performance
+    - Very good for expected use cases
+    - Bad for unexpected use cases
 
 @ulend
 
 ---
 
 ### CAP Theorem
+
+- Eric Brewer (~1997)
 
 @ul
 - CAP theorem (Reliability)
@@ -355,17 +360,20 @@ Note:
 
 ### NoSql Drawbacks
 
+- aaa
+
 @ul
--
--
+- Operational Expertise
+- ccc
 @ulend
 
 ---
 
 ### Future Directions
 
-@ul
 - NewSQL     (SQL ↔ NoSQL convergence)
+
+@ul
 - MAU        (commodity hardware)
 - NIC/RDMA   (cross memory access)
 - RAM store  (very fast)
