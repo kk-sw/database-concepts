@@ -363,9 +363,8 @@ Note:
 
 ### NoSQL Databases (Time)
 
-- xxx
     ```text
-    Example
+      Example
     ```
 - Products
 
@@ -389,7 +388,9 @@ Note:
 - Non-trivial queries are hard
 @ulend
 
-**Distributed systems are hard**
+@snap[text-center]
+### Distributed systems are hard
+@snapend
 
 ---
 
