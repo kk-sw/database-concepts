@@ -241,7 +241,7 @@ Note:
 - Schema/structure definition is optional 
     - Store anything 
     - Mix data w/i collections
-- Need to know the use cases (db. design)
+- Need to know major use cases (design)
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
@@ -250,8 +250,9 @@ Note:
 @ulend
 
 Note:
- - Store mixed data within 'table'
- - Navigational database (history)
+- Store mixed data within 'table'
+- Navigational database (history)
+- Use cases: store, ! query !
 
 ---
 
@@ -300,7 +301,7 @@ Note:
 ✖
 
 Note:
- - caches
+ - Caches
  - Mix storage
  
 ---
@@ -383,14 +384,21 @@ Note:
 
 @ul
 - Operational/developer expertise
-- Multiple servers and network needed
-- Model database based on the proposed usage
-- Non-trivial queries are hard
+- Complex Infrastructure
+- Proposed usage leads design
+    - Non-trivial queries are hard
+    - Data duplication (!)
+
 @ulend
 
-@snap[text-center]
-### Distributed systems are hard
+@snap[south text-center]
+#### Distributed systems are hard
 @snapend
+
+Note:
+- Write only database
+- Query design
+- Data duplication
 
 ---
 
