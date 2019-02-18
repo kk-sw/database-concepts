@@ -287,7 +287,8 @@ Note:
 ### NoSQL Databases (Key-Value)
 
   ```text
-        123 : firstName = "Arthur"  ;  surName = "Legend" ;  … …
+        123  ↠ firstName = "Arthur" ⌁ surName = "Legend" 
+        8874 ↠ color = "Black       ⌁ make = "Ford"
           . . . 
   ```
 
@@ -301,6 +302,7 @@ Note:
 
 Note:
  - caches
+ - Mix storage
  
 ---
 
