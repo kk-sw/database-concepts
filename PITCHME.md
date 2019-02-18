@@ -371,6 +371,17 @@ Note:
 
 ---
 
+### NoSql and RDBMS
+
+            |  NoSql     | RDBMS      |
+------------|------------|------------|
+Consistency | AAAAAAAAAA | AAAAAAAAAA |
+Development | AAAAAAAAAA | AAAAAAAAAA |
+Operation   | AAAAAAAAAA | AAAAAAAAAA |
+Cost        | AAAAAAAAAA | AAAAAAAAAA |
+
+---
+
 ### Future Directions
 
 - NewSQL     (SQL ↔ NoSQL convergence)
