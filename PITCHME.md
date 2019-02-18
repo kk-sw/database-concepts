@@ -247,6 +247,7 @@ Note:
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
+- Networked systems    
 
 @ulend
 
@@ -345,9 +346,11 @@ Note:
 ### NoSQL Databases (Graph)
 
 - xxx
+
     ```text
     Example
     ```
+    
 - Products
 
 ✔
@@ -381,24 +384,26 @@ Note:
 
 ### NoSql Drawbacks
 
-- Operational Expertise
-
 @ul
-- aa
-- bb
+- Operational Expertise
+- Network
+- Multiple servers
+- 
+
 @ulend
 
 ---
 
 ### NoSql and RDBMS
 
-  `         |  NoSql     | RDBMS      
+  Term      |  NoSql     | RDBMS      
 ------------|------------|------------
-Consistency | AAAAAAAAAA | AAAAAAAAAA 
-Development | AAAAAAAAAA | AAAAAAAAAA 
-Operation   | AAAAAAAAAA | AAAAAAAAAA 
-Cost        | AAAAAAAAAA | AAAAAAAAAA 
-Example     |            |
+Consistency | Weak       | Strong
+Performance | Varies     | Good
+Language    | Custom     | SQL
+DevOps      | Complex    | Simpler
+Node Count  |  >3        |  1
+Example     | DocStore   | HR app
 
 ---
 
