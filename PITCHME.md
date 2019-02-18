@@ -66,8 +66,10 @@ Note:
 ✖ "Programmer perspective" needed
 
 Note:
+ - ~1960s
  - It's logical model
  - Actual disk storage is different
+ - Domain databases: LDAP, Active Directory
 
 ---
 
@@ -88,9 +90,10 @@ Note:
 ✖ "Programmer perspective" needed
 
 Note:
-- Still used - IBM Information Management System v15 / 2017
+- Still used - IBM Information Management System 1966 - v15 (2017)
 - http://wiki.c2.com/?NetworkDatabase
 - https://stackoverflow.com/questions/3422221/what-exactly-is-the-problem-with-hierarchal-and-network-models-of-databases
+- NoSql relation
 
 ---
 
