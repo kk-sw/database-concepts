@@ -392,7 +392,7 @@ Note:
 @ulend
 
 @snap[south text-center]
-#### Distributed systems are hard
+#### >> Distributed systems are hard <<
 @snapend
 
 Note:
