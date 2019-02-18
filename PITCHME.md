@@ -288,8 +288,7 @@ Note:
 
   ```text
         123  ↠ firstName = "Arthur" ⌁ surName = "Legend" 
-        8874 ↠ color = "Black       ⌁ make = "Ford"
-          . . . 
+        8874 ↠ color     = "Black   ⌁ make    = "Ford"
   ```
 
 ✔ Very Fast
@@ -335,7 +334,7 @@ sdfsdfsds
 @ul
 - Operational/developer expertise
 - Complex Infrastructure
-- Proposed usage leads design
+- Proposed usage drives design
     - Non-trivial queries are hard
     - Data duplication (!)
 
@@ -348,8 +347,6 @@ sdfsdfsds
 Note:
 - Write only database
 - Query design
-- Data duplication
-
 
 
 ---
