@@ -180,7 +180,7 @@ Note:
 - Transaction = operations in a bundle
 - ACID (transaction control)
     - Atomic:       Operations succeed or roll-back (state before)
-    - Consistent:   On completion the database is in correct state
+    - Consistent:   Database is in correct state when trans. finished
     - Isolated:     Transactions do not disturb/effect another
     - Durable:      Results are permanent, even if error'd
 - 4 ACID levels
@@ -189,8 +189,8 @@ Note:
 @ulend
 
 Note:
- - Transaction with one operation
- - Automatic ACID modes
+- Transaction with one operation
+- Automatic ACID modes
 
 ---
 
