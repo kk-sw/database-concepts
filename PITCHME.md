@@ -241,9 +241,7 @@ Note:
 - Schema/structure definition is optional 
     - Store anything 
     - Mix data w/i collections
-- Non-trivial queries are hard
-    - Model database based on the proposed usage
-    - Need to know what to use for
+- Need to know the use cases (db. design)
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
@@ -385,12 +383,13 @@ Note:
 ### NoSql Drawbacks
 
 @ul
-- Operational Expertise
-- Network
-- Multiple servers
-- 
-
+- Operational/developer expertise
+- Multiple servers and network needed
+- Model database based on the proposed usage
+- Non-trivial queries are hard
 @ulend
+
+**Distributed systems are hard**
 
 ---
 
