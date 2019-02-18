@@ -286,10 +286,10 @@ Note:
 
 ### NoSQL Databases (Key-Value)
 
-    ```text
-        123 : firstName = "Arthur"  ;  surName = "Legend" ; ...
-        ... : ...
-    ```
+  ```text
+        123 : firstName = "Arthur"  ;  surName = "Legend" ;  … …
+          . . . 
+  ```
 
 ✔ Very Fast
 
