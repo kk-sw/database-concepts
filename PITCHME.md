@@ -392,7 +392,7 @@ Note:
 
 ### NoSql and RDBMS
 
-            |  NoSql     | RDBMS      
+  `         |  NoSql     | RDBMS      
 ------------|------------|------------
 Consistency | AAAAAAAAAA | AAAAAAAAAA 
 Development | AAAAAAAAAA | AAAAAAAAAA 
