@@ -238,8 +238,9 @@ Note:
 ### NoSQL Databases
 
 @ul
-- No predefined schema/structure
-    - Store anything
+- Schema/structure definition is optional 
+    - Store anything 
+    - Mix data w/i collections
 - Non-trivial queries are hard
     - Model database based on the proposed usage
     - Need to know what to use for
@@ -248,6 +249,10 @@ Note:
     - Bad for unexpected use cases
 
 @ulend
+
+Note:
+ - Store mixed data within 'table'
+ - Navigational database (history)
 
 ---
 
@@ -269,14 +274,20 @@ Note:
 ### NoSQL Databases (Historical)
 
 - XML Database
+    - Wasteland
 - Object Store
+    - Programmer's database
+
+Note:
+ - XML - noman's land 
+ - Object store
 
 ---
 
 ### NoSQL Databases (Key-Value)
 
     ```text
-        123 : { f_name = "Arthur", s_name = "Legend" }
+        123 : firstName = "Arthur"  ;  surName = "Legend" ; ...
         ... : ...
     ```
 
@@ -288,6 +299,9 @@ Note:
 
 ✖
 
+Note:
+ - caches
+ 
 ---
 
 ### NoSQL Databases (Document)
@@ -376,12 +390,24 @@ Note:
 
 ### NoSql and RDBMS
 
-            |  NoSql     | RDBMS      |
-------------|------------|------------|
-Consistency | AAAAAAAAAA | AAAAAAAAAA |
-Development | AAAAAAAAAA | AAAAAAAAAA |
-Operation   | AAAAAAAAAA | AAAAAAAAAA |
-Cost        | AAAAAAAAAA | AAAAAAAAAA |
+            |  NoSql     | RDBMS      
+------------|------------|------------
+Consistency | AAAAAAAAAA | AAAAAAAAAA 
+Development | AAAAAAAAAA | AAAAAAAAAA 
+Operation   | AAAAAAAAAA | AAAAAAAAAA 
+Cost        | AAAAAAAAAA | AAAAAAAAAA 
+Example     |            |
+
+---
+
+@snap[midpoint text-center]
+
+#### Use whatever is the best for the given problem
+
+@snapend
+
+Note:
+- Mix Sql and NoSQL
 
 ---
 
@@ -399,21 +425,6 @@ Cost        | AAAAAAAAAA | AAAAAAAAAA |
 Note:
  - https://blog.acolyer.org/2017/11/23/kv-direct-high-performance-in-memory-key-value-store-with-programmable-nic/
  - RDMA – Remote Direct Memory Access
-
-
-
-
----
-
-@snap[midpoint text-center]
-
-#### Use whatever is the best for the given problem
-
-@snapend
-
-Note:
-- Sql + NoSQL
-- Caches
 
 ---
 
