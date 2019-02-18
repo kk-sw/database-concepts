@@ -428,13 +428,13 @@ Note:
 
 ### Future Directions
 
-- NewSQL     (SQL ↔ NoSQL convergence)
-
 @ul
+- NewSQL     (SQL ↔ NoSQL convergence)
 - MAU        (commodity hardware)
 - NIC/RDMA   (cross memory access)
 - RAM store  (very fast)
 - FPGA       (custom hardware)
+
 @ulend
 
 Note:
