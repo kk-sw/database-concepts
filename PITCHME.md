@@ -308,75 +308,25 @@ Note:
 
 ### NoSQL Databases (Document)
 
-- xxx
-    ```text
-    Example
-    ```
-- Products
-
-✔
-
-✔
-
-✖
-
-✖
+sdfsdfsds
 
 ---
 
 ### NoSQL Databases (Wide Column)
 
-- xxx
-    ```text
-    Example
-    ```
-- Products
-
-✔
-
-✔
-
-✖
-
-✖
+sdfsdfsds
 
 ---
 
 ### NoSQL Databases (Graph)
 
-- xxx
-
-    ```text
-    Example
-    ```
-    
-- Products
-
-✔
-
-✔
-
-✖
-
-✖
+sdfsdfsds
 
 ---
 
 ### NoSQL Databases (Time)
 
-    ```text
-      Example
-    ```
-- Products
-
-✔
-
-✔
-
-✖
-
-✖
-
+sdfsdfsds
 
 ---
 
@@ -400,6 +350,8 @@ Note:
 - Query design
 - Data duplication
 
+
+
 ---
 
 ### NoSql and RDBMS
@@ -413,6 +365,8 @@ DevOps      | Complex    | Simpler
 Node Count  |  >3        |  1
 Example     | DocStore   | HR app
 
+
+
 ---
 
 @snap[midpoint text-center]
@@ -423,6 +377,8 @@ Example     | DocStore   | HR app
 
 Note:
 - Mix Sql and NoSQL
+
+
 
 ---
 
@@ -440,6 +396,11 @@ Note:
 Note:
  - https://blog.acolyer.org/2017/11/23/kv-direct-high-performance-in-memory-key-value-store-with-programmable-nic/
  - RDMA – Remote Direct Memory Access
+
+
+
+
+
 
 ---
 
