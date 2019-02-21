@@ -225,11 +225,8 @@ Note:
 
 
 
-
-
-
-
 ---
+
 
 
 
@@ -245,15 +242,16 @@ Note:
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
-- Transaction support varies (eventual consistency)  
-- Limited support for complex queries 
+- Varied transaction support (eventual consistency)  
+- Different query complexities  
 - **Scalable** distributed systems  
 
 @ulend
 
 Note:
-- NoSql wins: (1) no schema  (2) scalability
+- NoSql **wins**: (1) no schema  (2) scalability
 - Navigational database (history)
+- Query complexities: JSON -> SQL like
 
 ---
 
@@ -292,17 +290,14 @@ Note:
         8874 ↠ color     = "Black   ⌁ make    = "Ford"
   ```
 
-✔ Very Fast
-
-✔ Simple to use
-
-✖ Access by keys
-
+- Very Fast
+- Simple to use
+- Access by keys only
 - Infinispan, Redis, Memcached, etc.
 
 Note:
- - Caches
- - Mix storage
+- Caches
+- Mix storage
  
 ---
 
@@ -319,10 +314,10 @@ Note:
       }
       birth: 
         "Jun 23, 1942"
-    }                  ⌲ Document End
+    }                  ⌲ Document 1 End
     {                  ⌲ Document 2 Start
-      fullName : 
-        "James O' Connor'
+      fullName :       ⌲ Simple field
+        "James Doe'
     }                  ⌲ Document 2 End
   ```
 
@@ -330,30 +325,39 @@ Note:
 
 ### NoSQL Databases (Document II.)
 
-✔ Flexible (text) store
+@ul
+- Effective document (text) store
+- Free-text search engine
+- Easy to use (JSON after all)
+- No support for complex queries (cross doc.)  
+- MongoDB supports transactions
+- CouchDB, Couchbase, MongoDB, etc.
 
-✔ Free-text search engine
-
-✔ MongoDB supports transactions
-
-✖ NoSql family
-
-- MongoDB, CouchDB, Couchbase, etc.
+@ulend
 
 ---
 
-### NoSQL Databases (Wide Column)
+### NoSQL Databases (Wide Column I.)
 
-A simple row key with many
-columns. Columns belong to named
-column families. Columns in the
-same column family are stored
-together, making retrieval very
-useful. No relationships between
-columns in different tables.
-
+@ul
+- Rows (key) with many (~1000) columns
+- Write optimized (call logs, bank transactions, etc.)
+- SQL like query language
+- Limited ACID support 
+- Heavy weight systems
 - HBase, Cassandra
 
+@ulend
+
+Note:
+- https://chase-seibert.github.io/blog/2013/04/26/hbase-schema-design.html#
+
+---
+
+### NoSQL Databases (Wide Column II.)
+
+![SQL](img/hbase_tables.png)
+   
 ---
 
 ### NoSQL Databases (Graph)
@@ -387,8 +391,8 @@ sdfsdfsds
 - Complex Infrastructure
 - Proposed usage drives database design
 - Data duplication might be needed (!)
-- Limited query capabilities (no SQL)
-- Transactions are hard (no ACID)
+- No full ACID compliant transactions    
+- Complex queries can be hard  
 
 @ulend
 
@@ -412,7 +416,7 @@ Performance | Varies     | Good
 Language    | Custom     | SQL
 DevOps      | Complex    | Simpler
 Node Count  |  >3        |  1
-Example     | DocStore   | HR app
+Scalability | Good       | Poor
 
 
 
