@@ -362,19 +362,11 @@ Note:
 
 ### NoSQL Databases (Graph)
 
-Very simple structures in a directed
-graph. Each piece of data is a triple
-– Subject, Predicate, and Object.
-This technology underpins the
-Semantic Web. Triple stores are
-used to store webs of information
-with semantic inferencing, while
-graph stores are used for minimum
-distance (e.g. route planning
-applications) and other graph
-traversal problems.
-
+- Directed graph
+- aaa
 - Neo4j, GraphDB
+
+![SQL](img/graph_db.png)
 
 ---
 
@@ -397,7 +389,7 @@ sdfsdfsds
 - Operational/developer expertise needed
 - Complex Infrastructure
 - Proposed usage drives database design
-- Data duplication might be needed (!)
+- Data de-normalization might be needed (!)
 - No full ACID compliant transactions    
 - Complex queries can be hard  
 
