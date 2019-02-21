@@ -356,7 +356,7 @@ Note:
 
 ### NoSQL Databases (Wide Column II.)
 
-![SQL](img/hbase_tables.png)
+![SQL](img/wide_column_schema.png)
    
 ---
 
