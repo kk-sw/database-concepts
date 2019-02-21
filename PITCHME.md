@@ -362,9 +362,14 @@ Note:
 
 ### NoSQL Databases (Graph)
 
-- Directed graph
-- aaa
+!!!!!!!!!!!
+- Based on directed graph
+- Nodes, properties and relations 
+- Replacement for complex relational models
+- Query language
+- Transactions 
 - Neo4j, GraphDB
+!!!!!!!!!!!
 
 ![SQL](img/graph_db.png)
 
