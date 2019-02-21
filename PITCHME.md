@@ -241,18 +241,19 @@ Note:
 - Schema/structure definition is optional 
     - Store anything 
     - Mix data w/i collections
-- Need to know major use cases (design)
+- Need to know major use cases before design
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
-- Networked systems    
+- Transaction support varies (eventual consistency)  
+- Limited support for complex queries 
+- **Scalable** distributed systems  
 
 @ulend
 
 Note:
-- Store mixed data within 'table'
+- NoSql wins: (1) no schema  (2) scalability
 - Navigational database (history)
-- Use cases: store, ! query !
 
 ---
 
@@ -297,7 +298,7 @@ Note:
 
 ✖ Access by keys
 
-✖
+- Infinispan, Redis, Memcached, etc.
 
 Note:
  - Caches
@@ -305,21 +306,71 @@ Note:
  
 ---
 
-### NoSQL Databases (Document)
+### NoSQL Databases (Document I.)
 
-sdfsdfsds
+- Store JSON structured data
+- Documents can have different fields
+
+  ```text
+    {                  ⌲ Document 1 Start   
+      name: {          ⌲ Complex field   
+        first: "John"  ⌲ Simple field
+        last: "Const" 
+      }
+      birth: 
+        "Jun 23, 1942"
+    }                  ⌲ Document End
+    {                  ⌲ Document 2 Start
+      fullName : 
+        "James O' Connor'
+    }                  ⌲ Document 2 End
+  ```
+
+---
+
+### NoSQL Databases (Document II.)
+
+✔ Flexible (text) store
+
+✔ Free-text search engine
+
+✔ MongoDB supports transactions
+
+✖ NoSql family
+
+- MongoDB, CouchDB, Couchbase, etc.
 
 ---
 
 ### NoSQL Databases (Wide Column)
 
-sdfsdfsds
+A simple row key with many
+columns. Columns belong to named
+column families. Columns in the
+same column family are stored
+together, making retrieval very
+useful. No relationships between
+columns in different tables.
+
+- HBase, Cassandra
 
 ---
 
 ### NoSQL Databases (Graph)
 
-sdfsdfsds
+Very simple structures in a directed
+graph. Each piece of data is a triple
+– Subject, Predicate, and Object.
+This technology underpins the
+Semantic Web. Triple stores are
+used to store webs of information
+with semantic inferencing, while
+graph stores are used for minimum
+distance (e.g. route planning
+applications) and other graph
+traversal problems.
+
+- Neo4j, GraphDB
 
 ---
 
@@ -332,11 +383,12 @@ sdfsdfsds
 ### NoSql Drawbacks
 
 @ul
-- Operational/developer expertise
+- Operational/developer expertise needed
 - Complex Infrastructure
-- Proposed usage drives design
-    - Non-trivial queries are hard
-    - Data duplication (!)
+- Proposed usage drives database design
+- Data duplication might be needed (!)
+- Limited query capabilities (no SQL)
+- Transactions are hard (no ACID)
 
 @ulend
 
@@ -382,6 +434,7 @@ Note:
 ### Future Directions
 
 @ul
+- Hybrid     (NoSQL modes)
 - NewSQL     (SQL ↔ NoSQL convergence)
 - MAU        (commodity hardware)
 - NIC/RDMA   (cross memory access)
