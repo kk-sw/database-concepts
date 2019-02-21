@@ -202,7 +202,6 @@ Note:
 - Scaling is hard (ACID)
     - Expensive
     - 'Free' solutions are not mature for 9...9%
-    - Synchronization penalty
 - Non-structured data is hard to store
     - NoSql for rescue
 - For majority of uses SQL is just enough
