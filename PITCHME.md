@@ -293,7 +293,7 @@ Note:
 - Very Fast
 - Simple to use
 - Access by keys only
-- Infinispan, Redis, Memcached, etc.
+- Infinispan, Redis, Memcached, Ignite, etc.
 
 Note:
 - Caches
@@ -381,6 +381,13 @@ traversal problems.
 ### NoSQL Databases (Time)
 
 sdfsdfsds
+
+---
+
+### NoSQL Databases (Computing Grid)
+
+- Calculations performed in a computing grid using data distribution
+
 
 ---
 
