@@ -454,7 +454,7 @@ Note:
 
 ---
 
-### System adasfaaf
+### A Distributed System Example
 
 ![SQL](img/distrib-system.png)
    
