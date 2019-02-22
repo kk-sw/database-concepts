@@ -6,7 +6,12 @@
 @snapend
 
 Note:
- - https://gitpitch.com/kk-sw/database-concepts/master?grs=github&t=moon#/
+- https://gitpitch.com/kk-sw/database-concepts/master?grs=github&t=moon#/
+- Basic concepts - what's what
+- Overview
+- Common use cases 95%
+- No database expoert
+- Personal bias
 
 ---
 
@@ -251,6 +256,7 @@ Note:
 - NoSql **wins**: (1) no schema  (2) scalability
 - Navigational database (history)
 - Query complexities: JSON -> SQL like
+- NoI -> No Itron
 
 ---
 
