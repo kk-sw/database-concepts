@@ -245,8 +245,8 @@ Note:
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
-- Varied transaction support (eventual consistency, quorum)  
-- Different query complexities  
+- Varied transaction support (event-cons, quorum)  
+- Query language complexities  
 - **Scalable** distributed systems  
 
 @ulend
@@ -256,6 +256,7 @@ Note:
 - Navigational database (history)
 - Query complexities: JSON -> SQL like
 - NoI -> No Itron
+- event-cons: eventual consistency
 
 ---
 
@@ -332,15 +333,17 @@ Note:
 @ul
 - Effective document (text) store
 - Free-text search engine
-- JSON based storage and query (familiar to devs.)
-- No support for complex queries (cross doc.)  
-- MongoDB supports transactions
-- CouchDB, Couchbase, MongoDB, etc.
+- Documents are JSON based
+- Various query format
+- Varied transaction support (single doc.)
+- Couchbase, MongoDB, etc.
 
 @ulend
 
 Note:
-- db.inventory.find( { status: "D" } )
+- MongoDB:   db.inventory.find( { status: "D" } )
+- Couchbase: SELECT * FROM bucket JOIN ... WHERE email LIKE "%@example
+- ACID on single documents, but not multi-document  
 - easy to start with
 
 ---
@@ -368,23 +371,28 @@ Note:
    
 ---
 
-### NoSQL Databases (Graph)
+### NoSQL Databases (Graph I.)
 
 - Based on directed graph
 - Nodes, properties and relations !! 
 - Replacement for complex relational models !!
 - High level query language !! 
-- Transactions !! 
+- ACID transactions 
 - Neo4j (Cypher), GraphDB (SparQL) !!
 
-![SQL](img/graph_db.png)
-
 Note:
+- https://neo4j.com/product/
 - Cyper: MATCH (p:Person)<-[:LIKES]-(t:Technology)
 - https://neo4j.com/developer/cypher-query-language/#_cypher_syntax
 - https://neo4j.com/graphgist/first-steps-with-cypher
+- https://db-engines.com/en/system/GraphDB%3BNeo4j
 - SparQL: https://www.w3.org/TR/sparql11-overview/  
-  
+
+---
+
+### NoSQL Databases (Graph II.)
+
+![SQL](img/graph_db.png)
 
 ---
 
@@ -408,7 +416,8 @@ sdfsdfsds
 - Complex Infrastructure
 - Proposed usage drives database design
 - Data de-normalization might be needed (!)
-- No full ACID compliant transactions    
+- ACID compliance varies
+    - Performance impact     
 - Complex queries can be hard  
 
 @ulend
