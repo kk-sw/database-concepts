@@ -356,7 +356,7 @@ Note:
 - SQL like query language
 - Limited ACID support 
 - Heavy weight systems
-- HBase, Cassandra
+- HBase, Cassandra, etc.
 
 @ulend
 
@@ -378,7 +378,7 @@ Note:
 - Replacement for complex relational models !!
 - High level query language !! 
 - ACID transactions 
-- Neo4j (Cypher), GraphDB (SparQL) !!
+- Neo4j (Cypher), GraphDB (SparQL), etc.
 
 Note:
 - https://neo4j.com/product/
@@ -398,14 +398,18 @@ Note:
 
 ### NoSQL Databases (Time)
 
-sdfsdfsds
+- aa
+- bb
+- query
+- transaction
+- InfluxDB, Kdb+, Prometheus, etc.
 
 ---
 
 ### NoSQL Databases (Computing Grid)
 
 - Calculations performed in a computing grid using data distribution
-
+- Ignite, Infinispan, etc.
 
 ---
 
