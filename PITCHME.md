@@ -186,7 +186,7 @@ Note:
     - Atomic:       Operations succeed or roll-back (state before)
     - Consistent:   Database is in correct state when trans. finished
     - Isolated:     Transactions do not disturb/effect another
-          - 4 Isolation levels (speed vs consistency)
+    - ..  4 Isolation levels (speed vs consistency)
     - Durable:      Results are permanent, even if error'd
 
 @ulend
