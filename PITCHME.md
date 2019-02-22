@@ -234,16 +234,16 @@ Note:
 ### NoSQL Databases
 
 @ul
-- Schema/structure definition is optional 
-    - Store anything 
+- Schema/structure definition is optional
+    - Store anything
     - Mix data w/i collections
 - Need to know major use cases before design
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
-- Varied transaction support (event-cons, quorum)  
-- Query language complexities  
-- @color[red] **Scalable** distributed systems  
+- Varied transaction support (event-cons, quorum)
+- Query language complexities
+- @color[red](**Scalable** distributed systems)
 
 @ulend
 
@@ -279,7 +279,7 @@ Note:
     - Programmer's database
 
 Note:
- - XML - noman's land 
+ - XML - noman's land
  - Object store
 
 ---
@@ -287,7 +287,7 @@ Note:
 ### NoSQL Databases (Key-Value)
 
   ```text
-        123  ↠ firstName = "Arthur" ⌁ surName = "Legend" 
+        123  ↠ firstName = "Arthur" ⌁ surName = "Legend"
         8874 ↠ color     = "Black   ⌁ make    = "Ford"
   ```
 
@@ -299,7 +299,7 @@ Note:
 Note:
 - Caches
 - Mix storage
- 
+
 ---
 
 ### NoSQL Databases (Document I.)
@@ -308,12 +308,12 @@ Note:
 - Documents can have different fields
 
   ```text
-    {                  ⌲ Document 1 Start   
-      name: {          ⌲ Complex field   
+    {                  ⌲ Document 1 Start
+      name: {          ⌲ Complex field
         first: "John"  ⌲ Simple field
-        last: "Const" 
+        last: "Const"
       }
-      birth: 
+      birth:
         "Jun 23, 1942"
     }                  ⌲ Document 1 End
     {                  ⌲ Document 2 Start
@@ -339,7 +339,7 @@ Note:
 Note:
 - MongoDB:   db.inventory.find( { status: "D" } )
 - Couchbase: SELECT * FROM bucket JOIN ... WHERE email LIKE "%@example
-- ACID on single documents, but not multi-document  
+- ACID on single documents, but not multi-document
 - easy to start with
 
 ---
@@ -350,7 +350,7 @@ Note:
 - Rows (key) with many (~1000) columns
 - Write optimized (call logs, bank transactions, etc.)
 - SQL like query language
-- Limited ACID support 
+- Limited ACID support
 - Heavy weight systems
 - HBase, Cassandra, etc.
 
@@ -364,16 +364,16 @@ Note:
 ### NoSQL Databases (Wide Column II.)
 
 ![SQL](img/wide_column_schema.png)
-   
+
 ---
 
 ### NoSQL Databases (Graph I.)
 
 - Based on directed graph
-- Nodes, properties and relations !! 
+- Nodes, properties and relations !!
 - Replacement for complex relational models !!
-- High level query language !! 
-- ACID transactions 
+- High level query language !!
+- ACID transactions
 - Neo4j (Cypher), GraphDB (SparQL), etc.
 
 Note:
@@ -382,7 +382,7 @@ Note:
 - https://neo4j.com/developer/cypher-query-language/#_cypher_syntax
 - https://neo4j.com/graphgist/first-steps-with-cypher
 - https://db-engines.com/en/system/GraphDB%3BNeo4j
-- SparQL: https://www.w3.org/TR/sparql11-overview/  
+- SparQL: https://www.w3.org/TR/sparql11-overview/
 
 ---
 
@@ -417,8 +417,8 @@ Note:
 - Proposed usage drives database design
 - Data de-normalization might be needed (!)
 - ACID compliance varies
-    - Performance impact     
-- Complex queries can be hard  
+    - Performance impact
+- Complex queries can be hard
 
 @ulend
 
@@ -430,7 +430,7 @@ Note:
 
 ### NoSql and RDBMS
 
-  Term      |  NoSql     | RDBMS      
+  Term      |  NoSql     | RDBMS
 ------------|------------|------------
 Consistency | Weak       | Strong
 Performance | Varies     | Good
@@ -458,7 +458,7 @@ Note:
 ### A Distributed System Example
 
 ![SQL](img/distrib-system.png)
-   
+
 
 ---
 
