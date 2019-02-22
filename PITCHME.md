@@ -245,7 +245,7 @@ Note:
 - Performance
     - Very good for expected use cases
     - Bad for unexpected use cases
-- Varied transaction support (eventual consistency)  
+- Varied transaction support (eventual consistency, quorum)  
 - Different query complexities  
 - **Scalable** distributed systems  
 
@@ -332,12 +332,16 @@ Note:
 @ul
 - Effective document (text) store
 - Free-text search engine
-- Easy to use (JSON after all)
+- JSON based storage and query (familiar to devs.)
 - No support for complex queries (cross doc.)  
 - MongoDB supports transactions
 - CouchDB, Couchbase, MongoDB, etc.
 
 @ulend
+
+Note:
+- db.inventory.find( { status: "D" } )
+- easy to start with
 
 ---
 
@@ -366,16 +370,21 @@ Note:
 
 ### NoSQL Databases (Graph)
 
-!!!!!!!!!!!
 - Based on directed graph
-- Nodes, properties and relations 
-- Replacement for complex relational models
-- Query language
-- Transactions 
-- Neo4j, GraphDB
-!!!!!!!!!!!
+- Nodes, properties and relations !! 
+- Replacement for complex relational models !!
+- High level query language !! 
+- Transactions !! 
+- Neo4j (Cypher), GraphDB (SparQL) !!
 
 ![SQL](img/graph_db.png)
+
+Note:
+- Cyper: MATCH (p:Person)<-[:LIKES]-(t:Technology)
+- https://neo4j.com/developer/cypher-query-language/#_cypher_syntax
+- https://neo4j.com/graphgist/first-steps-with-cypher
+- SparQL: https://www.w3.org/TR/sparql11-overview/  
+  
 
 ---
 
