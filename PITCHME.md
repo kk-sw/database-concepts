@@ -173,7 +173,7 @@ Note:
 - Query for data
     - SELECT f_name, s_name FROM families WHERE child_count > 2;
 - Modify existing data
-    - UPDATE families SET f_name="Jonas" WHERE s_name = "Jhn"
+    - UPDATE families SET f_name ="Jonas" WHERE f_name = "Jhn"
 
 ---
 
@@ -222,13 +222,8 @@ Note:
 
 
 
-
-
-
-
-
-
 ---
+
 
 
 
@@ -430,11 +425,6 @@ Note:
 #### >> Distributed systems are hard <<
 @snapend
 
-Note:
-- Write only database
-- Query design
-
-
 ---
 
 ### NoSql and RDBMS
@@ -460,8 +450,14 @@ Scalability | Good       | Poor
 
 Note:
 - Mix Sql and NoSQL
+- Show a chart with NoSQL, SQL, Cache
 
+---
 
+### System adasfaaf
+
+![SQL](img/distrib-system.png)
+   
 
 ---
 
