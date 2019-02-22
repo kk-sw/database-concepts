@@ -243,7 +243,7 @@ Note:
     - Bad for unexpected use cases
 - Varied transaction support (event-cons, quorum)
 - Query language complexities
-- @color[red](**Scalable** distributed systems)
+- @color[#DC143C](**Scalable**) distributed systems
 
 @ulend
 
