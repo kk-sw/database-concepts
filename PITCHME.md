@@ -186,15 +186,17 @@ Note:
     - Atomic:       Operations succeed or roll-back (state before)
     - Consistent:   Database is in correct state when trans. finished
     - Isolated:     Transactions do not disturb/effect another
+        - 4 Isolation levels
+            - Speed vs consistency
     - Durable:      Results are permanent, even if error'd
-- 4 ACID levels
-    - Speed vs consistency
 
 @ulend
 
 Note:
 - Transaction with one operation
 - Automatic ACID modes
+- https://vladmihalcea.com/phantom-read/
+- https://en.wikipedia.org/wiki/Isolation_(database_systems)
 
 ---
 
