@@ -8,9 +8,8 @@
 Note:
 - https://gitpitch.com/kk-sw/database-concepts/master?grs=github&t=moon#/
 - Basic concepts - what's what
-- Overview
-- Common use cases 95%
-- No database expoert
+- Overview + common use cases 95%
+- **No** database expert
 - Personal bias
 
 ---
