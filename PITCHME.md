@@ -428,14 +428,14 @@ Note:
       │    ─────────┬────────── ──┬───────────    │
       │             │             │               │
       │             │             │               │
-    ┌───────────┬─────────┬───────────┬─────────────────┐
-    │measurement│ tag_set │ field_set │   timestamp     │
+    ┌─┴─────────┬───┴─────┬───────┴───┬───────────┴─────┐
+    │measurement│  tags   │   fields  │   timestamp     │
     └───────────┴─────────┴───────────┴─────────────────┘
   ```  
 
 - measurement ≈ table
 - tags        ≈ indexed fields
-- field set   ≈ not indexed fields
+- fields      ≈ not indexed fields
   
 ---
 
