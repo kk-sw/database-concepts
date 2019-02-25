@@ -369,12 +369,15 @@ Note:
 
 ### NoSQL Databases (Graph I.)
 
+@ul
 - Based on directed graph
 - Nodes, properties and relations !!
 - Replacement for complex relational models !!
 - High level query language !!
 - ACID transactions
 - Neo4j (Cypher), GraphDB (SparQL), etc.
+
+@ulend
 
 Note:
 - https://neo4j.com/product/
@@ -394,30 +397,45 @@ Note:
 
 ### NoSQL Databases (Time I.)
 
+@ul
 - Data points (meas.) over time interval
 - Regular (metrics) and irregular (events) series
-- query
-- transaction
+- Data is more useful in the aggregate (continuous queries)
+- SQL like query language with time related additions
+- No transaction concept
+    - PK is time in high precision
+    - Data modification is rare (append only)  
 - InfluxDB, Kdb+, Prometheus, etc.
-- What's time data and what's not !
+
+@ulend
 
 Note:
 - Not time series data: grades vs. time spent studying
 - Query:  SELECT onpeak( cellphoneusage )
+- No JOIN
+- Retention policy
+- To update a point, insert one with the same measurement
+- InfluxDB you don’t have to define schemas 
+- https://docs.influxdata.com/influxdb/v1.7/concepts/crosswalk/
+- https://docs.influxdata.com/influxdb/v1.7/concepts/insights_tradeoffs/
 
 ---
 
 ### NoSQL Databases (Time II.)
 
   ```text
-    weather,location=us-midwest temperature=82 1465839830100400200
-      |    -------------------- --------------  |
-      |             |             |             |
-      |             |             |             |
-    +-----------+--------+-+---------+-+---------+
-    |measurement|,tag_set| |field_set| |timestamp|
-    +-----------+--------+-+---------+-+---------+
+    weather,location=us-midwest temperature=82 14...0
+      │    ─────────┬────────── ──┬───────────  │
+      │             │             │             │
+      │             │             │             │
+    ┌───────────┬─────────┬───────────┬─────────────┐
+    │measurement│,tag_set │ field_set │   timestamp │
+    └───────────┴─────────┴───────────┴─────────────┘
   ```  
+
+- measurement ≈ table
+- tags        ≈ indexed fields
+- field set   ≈ not indexed fields
   
 ---
 
