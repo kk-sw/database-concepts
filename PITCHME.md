@@ -394,17 +394,31 @@ Note:
 
 ### NoSQL Databases (Time I.)
 
-- aa
-- bb
+- Data points (meas.) over time interval
+- Regular (metrics) and irregular (events) series
 - query
 - transaction
 - InfluxDB, Kdb+, Prometheus, etc.
 - What's time data and what's not !
 
+Note:
+- Not time series data: grades vs. time spent studying
+- Query:  SELECT onpeak( cellphoneusage )
+
 ---
 
 ### NoSQL Databases (Time II.)
 
+  ```text
+    weather,location=us-midwest temperature=82 1465839830100400200
+      |    -------------------- --------------  |
+      |             |             |             |
+      |             |             |             |
+    +-----------+--------+-+---------+-+---------+
+    |measurement|,tag_set| |field_set| |timestamp|
+    +-----------+--------+-+---------+-+---------+
+  ```  
+  
 ---
 
 ### NoSQL Databases (Computing Grid)
