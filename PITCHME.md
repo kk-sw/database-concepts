@@ -424,13 +424,13 @@ Note:
 ### NoSQL Databases (Time II.)
 
   ```text
-    weather,location=us-midwest temperature=82 14...0
-      │    ─────────┬────────── ──┬───────────  │
-      │             │             │             │
-      │             │             │             │
-    ┌───────────┬─────────┬───────────┬─────────────┐
-    │measurement│,tag_set │ field_set │   timestamp │
-    └───────────┴─────────┴───────────┴─────────────┘
+    weather,location=us-midwest temperature=82 144488740
+      │    ─────────┬────────── ──┬───────────    │
+      │             │             │               │
+      │             │             │               │
+    ┌───────────┬─────────┬───────────┬─────────────────┐
+    │measurement│ tag_set │ field_set │   timestamp     │
+    └───────────┴─────────┴───────────┴─────────────────┘
   ```  
 
 - measurement ≈ table
