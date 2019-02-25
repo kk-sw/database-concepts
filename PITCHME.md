@@ -432,7 +432,7 @@ Note:
 @snapend
 
 Note:
-- Large distributed systems are always in the state of partial failure
+- Large distributed systems are always in the **state of partial failure**
 
 ---
 
