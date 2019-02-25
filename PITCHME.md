@@ -340,7 +340,7 @@ Note:
 - MongoDB:   db.inventory.find( { status: "D" } )
 - Couchbase: SELECT * FROM bucket JOIN ... WHERE email LIKE "%@example
 - ACID on single documents, but not multi-document
-- easy to start with
+- Easy to start with
 
 ---
 
@@ -392,13 +392,18 @@ Note:
 
 ---
 
-### NoSQL Databases (Time)
+### NoSQL Databases (Time I.)
 
 - aa
 - bb
 - query
 - transaction
 - InfluxDB, Kdb+, Prometheus, etc.
+- What's time data and what's not !
+
+---
+
+### NoSQL Databases (Time II.)
 
 ---
 
@@ -425,6 +430,9 @@ Note:
 @snap[south text-center]
 #### >> Distributed systems are hard <<
 @snapend
+
+Note:
+- Large distributed systems are always in the state of partial failure
 
 ---
 
