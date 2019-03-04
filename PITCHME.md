@@ -227,11 +227,21 @@ Note:
     - Data duplicated
     - Performance
     - Availability
+    - Master-Master(Slave)
 - Sharding
     - Split data into smaller chunks
     - Multiple server machines
+    - Query impact
 
 @ulend
+
+Note:
+- We have now made queries by keys other than the partitioned
+- key incredibly inefficient (they need to go through all of the
+- shards). SQL JOIN queries are even worse and complex ones
+- become practically unusable.
+
+
 
 
 
