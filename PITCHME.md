@@ -209,7 +209,7 @@ Note:
     - 'Free' solutions are not mature for 9...9%
 - Non-structured data is hard to store
     - NoSql for rescue
-- For majority of uses SQL is just enough
+- For majority of uses RDBMS is just enough
 
 @ulend
 
@@ -217,19 +217,31 @@ Note:
  - ACID -> math -> need to synchronize to guarantee correctness
  - Column stores
 
+---
+
+### Advanced RDBMS Concepts
+
+@ul
+- Clusters
+    - Multiple database server machines
+    - Data duplicated
+    - Performance
+    - Availability
+- Sharding
+    - Split data into smaller chunks
+    - Multiple server machines
+
+@ulend
 
 
 
+
+ 
+ 
 
 
 
 ---
-
-
-
-
-
-
 
 ### NoSQL Databases
 
