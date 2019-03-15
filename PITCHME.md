@@ -527,7 +527,8 @@ Note:
 ### Future Directions
 
 @ul
-- Hybrid     (NoSQL modes)
+- Cloud      (Hosted database)
+- Hybrid     (Multiple NoSQL modes)
 - NewSQL     (SQL ↔ NoSQL convergence)
 - MAU        (commodity hardware)
 - NIC/RDMA   (cross memory access)
