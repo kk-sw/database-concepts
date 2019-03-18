@@ -517,6 +517,9 @@ Scalability | Good       | Poor
 
 ![SQL](img/MultipleDatabaseTypeCombinations2019.png)
 
+Note:
+- https://scalegrid.io/blog/2019-database-trends-sql-vs-nosql-top-databases-single-vs-multiple-database-use/
+
 ---
 
 ### A Distributed System Example
