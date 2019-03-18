@@ -511,16 +511,17 @@ Scalability | Good       | Poor
 
 @snapend
 
-Note:
-- Mix Sql and NoSQL
-- Show a chart with NoSQL, SQL, Cache
+---
+
+### Popular Database Combinations
+
+![SQL](img/MultipleDatabaseTypeCombinations2019.png)
 
 ---
 
 ### A Distributed System Example
 
 ![SQL](img/distrib-system.png)
-
 
 ---
 
