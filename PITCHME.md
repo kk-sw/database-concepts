@@ -393,9 +393,9 @@ Note:
 
 @ul
 - Based on directed graph
-- Nodes, properties and relations !!
-- Replacement for complex relational models !!
-- High level query language !!
+- Nodes, properties and relations
+- Replacement for complex relational models
+- High level query language
 - ACID transactions
 - Neo4j (Cypher), GraphDB (SparQL), etc.
 
@@ -422,7 +422,7 @@ Note:
 @ul
 - Data points (meas.) over time interval
 - Regular (metrics) and irregular (events) series
-- Data is more useful in the aggregate (continuous queries)
+- Data is more useful as aggregate (continuous queries)
 - SQL like query language with time related additions
 - No transaction concept
     - PK is time in high precision
