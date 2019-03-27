@@ -229,17 +229,17 @@ Note:
     - Availability
     - Master-Master(Slave)
 - Sharding
-    - Split data into smaller chunks
+    - Split data into smaller chunks (key!)
     - Multiple server machines
     - Query impact
 
 @ulend
 
 Note:
-- We have now made queries by keys other than the partitioned
-- key incredibly inefficient (they need to go through all of the
-- shards). SQL JOIN queries are even worse and complex ones
-- become practically unusable.
+- We have now made queries by keys other than the partitioned key incredibly inefficient (they need to go through all of the
+ shards). SQL JOIN queries are even worse and complex ones become practically unusable.
+- master: r/w;  slave: r only
+- master master: multiple master (r/w) 
 
 
 
@@ -286,10 +286,14 @@ Note:
   - Consistency:         A read receives the most recent data or an error
   - Availability:        A request receives a (non-error) response with (old) data
   - Partition tolerance: System operates when network is not reliable
-- Choose two
+- Choose two (but P shall be a must)
 - Most systems support configurable CAP modes
 
 @ulend
+
+
+Note:
+- Overload 149
 
 ---
 
@@ -380,7 +384,9 @@ Note:
 
 Note:
 - https://chase-seibert.github.io/blog/2013/04/26/hbase-schema-design.html#
-
+- https://docs.datastax.com/en/cql/3.3/cql/cql_using/useInsertLWT.html
+- Cassandra lightweight transactions: also known as Compare and Set (CAS).
+ 
 ---
 
 ### NoSQL Databases (Wide Column II.)
