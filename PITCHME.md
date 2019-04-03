@@ -284,7 +284,7 @@ Note:
 - Eric Brewer (~1997)
 - CAP theorem (Reliability)
   - Consistency:         A read receives the most recent data or an error
-  - Availability:        A request receives a (non-error) response with (old) data
+  - Availability:        A request receives a (non-error) response with (maybe old) data
   - Partition tolerance: System operates when network is not reliable
 - Choose two (but P shall be a must)
 - Most systems support configurable CAP modes
@@ -294,6 +294,7 @@ Note:
 
 Note:
 - Overload 149
+- https://stackoverflow.com/questions/12346326/cap-theorem-availability-and-partition-tolerance
 
 ---
 
