@@ -275,6 +275,7 @@ Note:
 - Query complexities: JSON -> SQL like
 - NoI -> No Itron
 - event-cons: eventual consistency
+- quorum model = members with differing latency, cost, or durability characteristics.
 
 ---
 
