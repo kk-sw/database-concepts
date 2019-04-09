@@ -346,7 +346,7 @@ Note:
     }                  ⌲ Document 1 End
     {                  ⌲ Document 2 Start
       fullName :       ⌲ Simple field
-        "James Doe'
+        "James Doe"
     }                  ⌲ Document 2 End
   ```
 
@@ -479,7 +479,7 @@ Note:
 ### NoSql Drawbacks
 
 @ul
-- Operational/developer expertise needed
+- Operational/developer expertize needed
 - Complex Infrastructure
 - Proposed usage drives database design
 - Data de-normalization might be needed (!)
