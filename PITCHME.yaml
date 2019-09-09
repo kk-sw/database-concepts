@@ -1,17 +1,15 @@
-
+#
+# https://gitpitch.com/docs/themes/demos/
+#
 
 theme            : template
-
-## theme-background : [ "#FFF" ]
+theme-background : [ "white" ]
 theme-headline   : [ "Concert One", "black", "none" ]
 ## theme-byline     : [ "Concert One", "black", "none" ]
 theme-byline     : [ "Bubblegum", "black", "none" ]
 
 
-
-
 layout : top-left
-
 footnote : "Database Concepts - A Historical Perspective - 2019 - by: KK"
 
 published : false
