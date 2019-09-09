@@ -4,7 +4,7 @@ theme            : template
 
 ## theme-background : [ "#FFF" ]
 theme-headline   : [ "Roboto", "black", "none" ]
-theme-byline     : [ "Roboto", "black", "none" ]
+theme-byline     : [ "Lato", "black", "none" ]
 
 
 layout : top-left
