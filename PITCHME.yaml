@@ -3,9 +3,9 @@
 theme            : template
 
 ## theme-background : [ "#FFF" ]
-theme-headline   : [ "Roboto", "black", "none" ]
-theme-byline     : [ "Concert One", "black", "none" ]
-## theme-byline     : [ "Bubblegum", "black", "none" ]
+theme-headline   : [ "Concert One", "black", "none" ]
+## theme-byline     : [ "Concert One", "black", "none" ]
+theme-byline     : [ "Bubblegum", "black", "none" ]
 
 
 
