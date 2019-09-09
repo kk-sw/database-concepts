@@ -4,7 +4,8 @@
 
 theme            : template
 theme-background : [ "white" ]
-theme-headline   : [ "Concert One", "black", "none" ]
+# h1,h2:
+theme-headline   : [ "Raleway", "black", "none" ]
 ## theme-byline     : [ "Concert One", "black", "none" ]
 theme-byline     : [ "Bubblegum", "black", "none" ]
 
